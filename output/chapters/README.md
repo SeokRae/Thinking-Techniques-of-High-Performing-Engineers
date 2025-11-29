@@ -19,7 +19,3 @@
 - [13장: Planning](13-planning.md)
 - [14장: Politics](14-politics.md)
 - [15장: Just for Fun](15-just-for-fun.md)
-
-## 참고 파일
-- [1장 백업](01-observation-backup.md)
-- [2장 Method R 백업](02-method-r-backup.md)
