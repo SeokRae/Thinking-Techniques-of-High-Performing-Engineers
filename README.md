@@ -13,7 +13,6 @@
 - `output/00-README.md` — 위 세 가지 묶음의 상세 안내 *(git 미추적)*
 - `books-source/` — 원본 PDF (저작권 주의, git 미추적)
 - 스크립트 — `scripts/pdf_to_markdown.py`, `scripts/generate_toc_index.py`, `scripts/create_optimized_guides.py` 등 변환·색인 도구 *(git 미추적)*
-- 프로세스/체크리스트 — `docs/process/PRD-chapter-improvement.md`, `docs/checklists/CHAPTER-IMPROVEMENT-CHECKLIST.md` *(로컬 관리, gitignore)*
 
 프로젝트 전체 구조는 아래와 같습니다.
 
@@ -26,7 +25,6 @@ project-root/
 ├── books-source/        # 원본 PDF (gitignore)
 ├── archive/             # 일회용 스크립트
 ├── scripts/             # 변환/정리 스크립트 (gitignore)
-├── docs/                # PRD, 체크리스트 등 프로세스 문서 (gitignore)
 ├── CONTRIBUTING.md
 └── README.md
 ```
@@ -73,9 +71,9 @@ cat output/guides/02-core-concepts.md
 
 ## 저장소 관리 메모
 
-- `output/`, `books-source/`, `scripts/`, `docs/`는 gitignore 대상입니다. 필요하면 `.gitignore`에서 제외 후 커밋하세요.
+- `output/`, `books-source/`, `scripts/`는 gitignore 대상입니다. 필요하면 `.gitignore`에서 제외 후 커밋하세요.
 - 변환 산출물(`output/*`)은 스크립트로 언제든 재생성 가능합니다.
-- 프로세스 문서/체크리스트는 로컬 참고용입니다. 공유하려면 gitignore에서 제외 후 커밋하세요.
+- 로컬 참고용 문서가 있다면 gitignore 하에 두고, 공유가 필요할 때만 명시적으로 포함하세요.
 
 ---
 
