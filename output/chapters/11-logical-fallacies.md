@@ -53,4 +53,4 @@
 
 ---
 
-[← 이전: 10장](10-latency-hiding.md) | [다음: 12장 →](12-next.md)
+[← 이전: 10장](10-latency-hiding.md) | [다음: 12장 →](12-testing.md)
