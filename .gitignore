@@ -1,0 +1,25 @@
+# PDF 책 파일 제외
+books-source/
+*.pdf
+*.PDF
+output/raw/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로컬 임시 파일
+.tmp/
+*.bak
+
+# Claude 설정 파일
+CLAUDE.md
+
+# Archive 폴더
+archive/
+# Local scripts (re-runnable utilities)
+scripts/
