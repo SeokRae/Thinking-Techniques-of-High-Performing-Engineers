@@ -1,31 +1,31 @@
 # 일 잘하는 엔지니어의 생각 기법 (Markdown Edition)
 
 **원본**: "일 잘하는 엔지니어의 생각 기법" (캐리 밀샙 지음, 장현희 옮김)  
-**목적**: PDF를 Markdown으로 변환하고, 학습/복습이 쉽도록 챕터별·주제별로 재구성합니다.
+**목적**: PDF를 Markdown으로 변환하고, 학습/복습이 쉽도록 챕터별·주제별로 재구성합니다. (주요 산출물은 로컬에서 생성하며 git에는 포함하지 않습니다.)
 
 ---
 
-## 무엇이 들어 있나요?
+## 로컬에 무엇이 생성되나요?
 
-- `output/raw/` — PDF를 페이지 단위로 그대로 변환한 원본 28개
-- `output/chapters/` — 주제별로 다시 엮은 7개 챕터
-- `output/guides/` — 학습/실습용 요약 가이드 6개
-- `output/00-README.md` — 위 세 가지 묶음의 상세 안내
-- `books-source/` — 원본 PDF (저작권 주의)
-- 스크립트 — `scripts/pdf_to_markdown.py`, `scripts/generate_toc_index.py`, `scripts/create_optimized_guides.py` 등 변환·색인 도구 *(재생성 가능, git 미추적)*
+- `output/raw/` — PDF를 페이지 단위로 그대로 변환한 원본 28개 *(git 미추적)*
+- `output/chapters/` — 주제별로 다시 엮은 7개 챕터 *(git 미추적)*
+- `output/guides/` — 학습/실습용 요약 가이드 6개 *(git 미추적)*
+- `output/00-README.md` — 위 세 가지 묶음의 상세 안내 *(git 미추적)*
+- `books-source/` — 원본 PDF (저작권 주의, git 미추적)
+- 스크립트 — `scripts/pdf_to_markdown.py`, `scripts/generate_toc_index.py`, `scripts/create_optimized_guides.py` 등 변환·색인 도구 *(git 미추적)*
 - 프로세스/체크리스트 — `docs/process/PRD-chapter-improvement.md`, `docs/checklists/CHAPTER-IMPROVEMENT-CHECKLIST.md` *(로컬 관리, gitignore)*
 
 프로젝트 전체 구조는 아래와 같습니다.
 
 ```
 project-root/
-├── output/
-│   ├── raw/             # PDF 직접 변환
-│   ├── chapters/        # 주제별 재정리
-│   └── guides/          # 학습용 가이드
-├── books-source/        # 원본 PDF
+├── output/              # 변환 결과 (gitignore)
+│   ├── raw/
+│   ├── chapters/
+│   └── guides/
+├── books-source/        # 원본 PDF (gitignore)
 ├── archive/             # 일회용 스크립트
-├── scripts/             # 변환/정리 스크립트
+├── scripts/             # 변환/정리 스크립트 (gitignore)
 ├── docs/                # PRD, 체크리스트 등 프로세스 문서 (gitignore)
 ├── CONTRIBUTING.md
 └── README.md
@@ -38,9 +38,9 @@ project-root/
 1) **빠른 훑어보기**: `output/guides/00-LEARNING-GUIDE.md`  
 2) **주제별 학습**: `output/chapters/01-observation.md` 등 챕터별 파일  
 3) **원문 순서로 정독**: `output/raw/01-p001-014.md`부터 순서대로  
-4) **찾아보기/색인**: `output/02-INDEX.md`, `scripts/generate_toc_index.py`
+4) **찾아보기/색인**: `output/02-INDEX.md`(생성 후), `scripts/generate_toc_index.py`
 
-터미널 예시:
+터미널 예시 (변환 후):
 
 ```bash
 ls output/chapters/
@@ -49,7 +49,7 @@ cat output/guides/02-core-concepts.md
 
 ---
 
-## 스크립트로 변환·갱신하기
+## 스크립트로 변환·갱신하기 (로컬 전용)
 
 > 원본 PDF 접근 시 저작권을 준수하세요.
 
@@ -73,9 +73,9 @@ cat output/guides/02-core-concepts.md
 
 ## 저장소 관리 메모
 
-- `output/raw/`는 원본 변환물이라 git에서 제외되어 있습니다. 필요 시 스크립트로 재생성하세요.
-- `scripts/`는 로컬 유틸 모음으로 git에서 제외되어 있습니다. 공유가 필요하면 `.gitignore`에서 제외 후 커밋하세요.
-- 프로세스 문서·체크리스트는 `docs/`에 모여 있으며 기본적으로 gitignore 대상입니다. 공유가 필요하면 `.gitignore`에서 제외 후 커밋하세요.
+- `output/`, `books-source/`, `scripts/`, `docs/`는 gitignore 대상입니다. 필요하면 `.gitignore`에서 제외 후 커밋하세요.
+- 변환 산출물(`output/*`)은 스크립트로 언제든 재생성 가능합니다.
+- 프로세스 문서/체크리스트는 로컬 참고용입니다. 공유하려면 gitignore에서 제외 후 커밋하세요.
 
 ---
 
