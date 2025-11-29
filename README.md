@@ -7,24 +7,15 @@
 
 ## 로컬에 무엇이 생성되나요?
 
-- `output/raw/` — PDF를 페이지 단위로 그대로 변환한 원본 28개 *(git 미추적)*
-- `output/chapters/` — 주제별로 다시 엮은 7개 챕터 *(git 미추적)*
-- `output/guides/` — 학습/실습용 요약 가이드 6개 *(git 미추적)*
-- `output/00-README.md` — 위 세 가지 묶음의 상세 안내 *(git 미추적)*
-- `books-source/` — 원본 PDF (저작권 주의, git 미추적)
-- 스크립트 — `scripts/pdf_to_markdown.py`, `scripts/generate_toc_index.py`, `scripts/create_optimized_guides.py` 등 변환·색인 도구 *(git 미추적)*
+- `output/chapters/` — 주제별로 다시 엮은 챕터 모음 *(git 미추적, 로컬 생성)*
+- `README.md` — 이 안내서
 
 프로젝트 전체 구조는 아래와 같습니다.
 
 ```
 project-root/
 ├── output/              # 변환 결과 (gitignore)
-│   ├── raw/
-│   ├── chapters/
-│   └── guides/
-├── books-source/        # 원본 PDF (gitignore)
-├── archive/             # 일회용 스크립트
-├── scripts/             # 변환/정리 스크립트 (gitignore)
+│   └── chapters/        # 주제별 재정리 (gitignore)
 ├── CONTRIBUTING.md
 └── README.md
 ```
@@ -33,29 +24,15 @@ project-root/
 
 ## 어떻게 읽으면 좋을까요?
 
-1) **빠른 훑어보기**: `output/guides/00-LEARNING-GUIDE.md`  
-2) **주제별 학습**: `output/chapters/01-observation.md` 등 챕터별 파일  
-3) **원문 순서로 정독**: `output/raw/01-p001-014.md`부터 순서대로  
-4) **찾아보기/색인**: `output/02-INDEX.md`(생성 후), `scripts/generate_toc_index.py`
+1) **주제별 학습**: `output/chapters/01-observation.md` 등 챕터별 파일  
+2) **순서대로 읽기**: `output/chapters/00-intro.md` → `output/chapters/01-observation.md` → …
 
-터미널 예시 (변환 후):
+터미널 예시 (로컬 생성 후):
 
 ```bash
 ls output/chapters/
-cat output/guides/02-core-concepts.md
+cat output/chapters/01-observation.md
 ```
-
----
-
-## 스크립트로 변환·갱신하기 (로컬 전용)
-
-> 원본 PDF 접근 시 저작권을 준수하세요.
-
-- PDF → Markdown: `python scripts/pdf_to_markdown.py`
-- 목차/색인 생성: `python scripts/generate_toc_index.py`
-- 가이드 리프레시: `python scripts/create_optimized_guides.py`
-
-필요 도구: Python 3.9+, Git, PyPDF2 설치(`pip install PyPDF2`)
 
 ---
 
@@ -71,8 +48,8 @@ cat output/guides/02-core-concepts.md
 
 ## 저장소 관리 메모
 
-- `output/`, `books-source/`, `scripts/`는 gitignore 대상입니다. 필요하면 `.gitignore`에서 제외 후 커밋하세요.
-- 변환 산출물(`output/*`)은 스크립트로 언제든 재생성 가능합니다.
+- `output/`는 gitignore 대상입니다. 로컬에서만 생성·활용하세요.
+- 챕터 파일(`output/chapters/*.md`)은 필요 시 재생성하거나 수동 정리해 사용합니다.
 - 로컬 참고용 문서가 있다면 gitignore 하에 두고, 공유가 필요할 때만 명시적으로 포함하세요.
 
 ---
@@ -86,6 +63,6 @@ cat output/guides/02-core-concepts.md
 
 ## 빠른 길잡이
 
-- 바로 읽기: `output/00-README.md`, `output/guides/00-LEARNING-GUIDE.md`
+- 바로 읽기: `output/chapters/00-intro.md`, `output/chapters/01-observation.md`
 - 작업 시작: Issue 등록 → 브랜치 생성 → PR
 - 질문/아이디어: Issue에 남기면 빠르게 대응합니다.
