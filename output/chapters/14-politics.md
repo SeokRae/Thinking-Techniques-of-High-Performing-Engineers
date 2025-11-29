@@ -42,4 +42,4 @@
 
 ---
 
-[← 이전: 13장](13-planning.md) | [다음: 15장 →](15-next.md)
+[← 이전: 13장](13-planning.md) | [다음: 15장 →](15-just-for-fun.md)

@@ -55,4 +55,4 @@
 
 ---
 
-[← 이전: 11장](11-logical-fallacies.md) | [다음: 13장 →](13-next.md)
+[← 이전: 11장](11-logical-fallacies.md) | [다음: 13장 →](13-planning.md)

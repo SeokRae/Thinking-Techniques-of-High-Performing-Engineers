@@ -131,4 +131,4 @@
 
 ---
 
-[← 이전: 4장](04-optimization-techniques.md) | [다음: 6장 →](06-performance-culture.md)
+[← 이전: 4장](04-optimization-techniques.md) | [다음: 6장 →](06-delay.md)

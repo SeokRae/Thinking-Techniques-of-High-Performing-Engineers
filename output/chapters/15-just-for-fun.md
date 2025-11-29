@@ -24,4 +24,4 @@
 
 ---
 
-[← 이전: 14장](14-politics.md) | [다음: 용어 사전 →](glossary.md)
+[← 이전: 14장](14-politics.md) | [다음: 1장 →](00-intro.md)

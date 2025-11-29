@@ -56,4 +56,4 @@
 
 ---
 
-[← 이전: 8장](08-problem-solving.md) | [다음: 10장 →](10-next.md)
+[← 이전: 8장](08-problem-solving.md) | [다음: 10장 →](10-latency-hiding.md)
