@@ -23,3 +23,5 @@ CLAUDE.md
 archive/
 # Local scripts (re-runnable utilities)
 scripts/
+# Process/checklist docs (regenerate or non-critical to track)
+docs/
