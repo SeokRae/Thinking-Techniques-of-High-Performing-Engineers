@@ -112,4 +112,4 @@
 
 ---
 
-[← 이전: 2장](02-methodology.md) | [다음: 4장 →](04-optimization-techniques.md)
+[← 이전: 2장](02-method-r.md) | [다음: 4장 →](04-optimization-techniques.md)
