@@ -72,4 +72,4 @@
 
 ---
 
-[← 이전: 2장 - Method R 방법론](02-method-r-summary.md) | [다음: 4장 - 최적화 기법 →](04-optimization-techniques-summary.md)
+[← 이전: 2장 - Method R 방법론](02-method-r-summary.md) | [다음: 4장 - 성능 분석 →](04-performance-analysis-summary.md)
