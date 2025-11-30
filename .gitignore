@@ -3,6 +3,7 @@ books-source/
 *.pdf
 *.PDF
 output/raw/
+output/analysis/
 
 # IDE
 .idea/
