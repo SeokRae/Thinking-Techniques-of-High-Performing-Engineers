@@ -69,4 +69,4 @@
 
 ---
 
-[← 이전: 5장 - 실전 사례](05-real-world-examples-summary.md) | [다음: 7장 - 낭비 →](07-waste-summary.md)
+[← 이전: 5장 - 최적화 실전 사례](05-optimization-cases-summary.md) | [다음: 7장 - 낭비 →](07-waste-summary.md)
