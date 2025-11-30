@@ -78,4 +78,4 @@
 
 ---
 
-[← 이전: 3장 - 성능 측정](03-performance-measurement-summary.md) | [다음: 5장 - 실전 사례 →](05-real-world-examples-summary.md)
+[← 이전: 3장 - 성능 측정](03-performance-measurement-summary.md) | [다음: 5장 - 최적화 실전 사례 →](05-optimization-cases-summary.md)

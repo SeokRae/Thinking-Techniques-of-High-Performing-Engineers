@@ -72,4 +72,4 @@
 
 ---
 
-[← 이전: 4장 - 최적화 기법](04-optimization-techniques-summary.md) | [다음: 6장 - 지연 →](06-delay-summary.md)
+[← 이전: 4장 - 성능 분석](04-performance-analysis-summary.md) | [다음: 6장 - 지연 →](06-delay-summary.md)

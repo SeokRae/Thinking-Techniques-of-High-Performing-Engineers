@@ -89,4 +89,4 @@
 
 ---
 
-[← 이전: 5장](05-real-world-examples.md) | [다음: 7장 →](07-waste.md)
+[← 이전: 5장](05-optimization-cases.md) | [다음: 7장 →](07-waste.md)
