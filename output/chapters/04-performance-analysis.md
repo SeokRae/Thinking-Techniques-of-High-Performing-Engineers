@@ -1,4 +1,4 @@
-# 4장: 최적화 기법(카운트 vs 시간)
+# 4장: 성능 분석(카운트 vs 시간)
 
 ---
 
@@ -106,4 +106,4 @@
 
 ---
 
-[← 이전: 3장](03-performance-measurement.md) | [다음: 5장 →](05-real-world-examples.md)
+[← 이전: 3장](03-performance-measurement.md) | [다음: 5장 →](05-optimization-cases.md)

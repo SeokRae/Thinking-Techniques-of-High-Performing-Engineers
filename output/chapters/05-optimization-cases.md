@@ -1,4 +1,4 @@
-# 5장: 실전 사례
+# 5장: 최적화 실전 사례
 
 ---
 
@@ -131,4 +131,4 @@
 
 ---
 
-[← 이전: 4장](04-optimization-techniques.md) | [다음: 6장 →](06-delay.md)
+[← 이전: 4장](04-performance-analysis.md) | [다음: 6장 →](06-delay.md)
