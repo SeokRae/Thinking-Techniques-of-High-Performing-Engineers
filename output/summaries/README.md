@@ -14,8 +14,8 @@
 | 1 | 올바른 관찰하기 | [01-observation-summary.md](01-observation-summary.md) | 현장 관찰, 증상 vs 원인, 낸시의 칸막이 책상 | ~145줄 |
 | 2 | Method R 방법론 | [02-method-r-summary.md](02-method-r-summary.md) | 7단계 방법론, 우선순위, 오렌지 카운티 위기 | ~140줄 |
 | 3 | 성능 측정(프로파일링) | [03-performance-measurement-summary.md](03-performance-measurement-summary.md) | 추적→프로파일→분석, 병목 식별 | ~65줄 |
-| 4 | 최적화 기법 | [04-optimization-techniques-summary.md](04-optimization-techniques-summary.md) | 카운트 vs 시간, 케빈의 청구서 | ~60줄 |
-| 5 | 실전 사례 | [05-real-world-examples-summary.md](05-real-world-examples-summary.md) | 데브라·예티·SSD vs 알고리즘, 랍프 문제 | ~75줄 |
+| 4 | 성능 분석 | [04-performance-analysis-summary.md](04-performance-analysis-summary.md) | 카운트 vs 시간, 케빈의 청구서 | ~60줄 |
+| 5 | 최적화 실전 사례 | [05-optimization-cases-summary.md](05-optimization-cases-summary.md) | 데브라·예티·SSD vs 알고리즘, 랍프 문제 | ~75줄 |
 | 6 | 지연(Delay) | [06-delay-summary.md](06-delay-summary.md) | 대기 지연, 대기열 이론, 트래픽 강도 | ~45줄 |
 | 7 | 낭비(Waste) | [07-waste-summary.md](07-waste-summary.md) | 제곱 성장 낭비, 마사의 보고서, 현장 관찰 | ~38줄 |
 | 8 | 문제 해결 | [08-problem-solving-summary.md](08-problem-solving-summary.md) | 4가지 질문, 피드백 루프, 최고 속도 | ~70줄 |
