@@ -1,60 +1,50 @@
-# 일 잘하는 엔지니어의 생각 기법 (Markdown Edition)
+# 일 잘하는 엔지니어의 생각 기법 — 학습 요약
 
-**원본**: "일 잘하는 엔지니어의 생각 기법" (캐리 밀샙 지음, 장현희 옮김)  
-**목적**: 학습/복습이 쉽도록 챕터별·주제별로 재구성합니다.
-
----
-
-## 로컬에 무엇이 생성되나요?
-
-- `output/chapters/` — 주제별로 다시 엮은 챕터 모음
-- `README.md` — 이 안내서
-
-프로젝트 전체 구조는 아래와 같습니다.
-
-```
-project-root/
-├── output/              # 변환 결과 (gitignore)
-│   └── chapters/        # 주제별 재정리 (gitignore)
-└── README.md
-```
+이 저장소의 학습 내용은 `output/summaries/`에 정리되어 있습니다.  
+모든 요약은 챕터별 마크다운 파일로 구성되어 있으며, 빠른 복습과 실무 적용을 목표로 합니다.
 
 ---
 
-## 어떻게 읽으면 좋을까요?
+## 목차 (요약 파일)
 
-1) **주제별 학습**: `output/chapters/01-observation.md` 등 챕터별 파일  
-2) **순서대로 읽기**: `output/chapters/00-intro.md` → `output/chapters/01-observation.md` → …
+| 챕터 | 요약 파일 | 간략 내용 |
+| --- | --- | --- |
+| 00 | [`00-intro-summary.md`](output/summaries/00-intro-summary.md) | 최적화의 본질, 올바른 질문 |
+| 01 | [`01-observation-summary.md`](output/summaries/01-observation-summary.md) | 현장 관찰, 증상 vs 원인 |
+| 02 | [`02-method-r-summary.md`](output/summaries/02-method-r-summary.md) | Method R 7단계, 우선순위 |
+| 03 | [`03-performance-measurement-summary.md`](output/summaries/03-performance-measurement-summary.md) | 측정과 프로파일링, 병목 식별 |
+| 04 | [`04-performance-analysis-summary.md`](output/summaries/04-performance-analysis-summary.md) | 카운트 vs 시간, 원인 분석 |
+| 05 | [`05-optimization-cases-summary.md`](output/summaries/05-optimization-cases-summary.md) | 최적화 사례, 전략 비교 |
+| 06 | [`06-delay-summary.md`](output/summaries/06-delay-summary.md) | 대기 지연, 대기열 이론 |
+| 07 | [`07-waste-summary.md`](output/summaries/07-waste-summary.md) | 낭비의 유형, 현장 관찰 |
+| 08 | [`08-problem-solving-summary.md`](output/summaries/08-problem-solving-summary.md) | 문제 해결 질문, 피드백 루프 |
+| 09 | [`09-prediction-summary.md`](output/summaries/09-prediction-summary.md) | 예측의 함정, 분포 이해 |
+| 10 | [`10-latency-hiding-summary.md`](output/summaries/10-latency-hiding-summary.md) | 지연 숨기기, 작업 순서 |
+| 11 | [`11-logical-fallacies-summary.md`](output/summaries/11-logical-fallacies-summary.md) | 논리적 오류, 지표 함정 |
+| 12 | [`12-testing-summary.md`](output/summaries/12-testing-summary.md) | 파괴적 테스트, 위험 우선순위 |
+| 13 | [`13-planning-summary.md`](output/summaries/13-planning-summary.md) | 용량 계획, 모델링 |
+| 14 | [`14-politics-summary.md`](output/summaries/14-politics-summary.md) | 기술과 정치, 조직 심리 |
+| 15 | [`15-just-for-fun-summary.md`](output/summaries/15-just-for-fun-summary.md) | 가벼운 실습, 관찰 훈련 |
 
-터미널 예시 (로컬 생성 후):
+---
+
+## 학습 시작
 
 ```bash
-ls output/chapters/
-cat output/chapters/01-observation.md
+ls output/summaries/
+cat output/summaries/01-observation-summary.md
 ```
 
 ---
 
-## 협업·기여 가이드 (요약)
+## 읽는 방법 (추천)
 
-- 모든 작업은 Issue로 시작 → 브랜치 → PR → 병합 → Issue 자동 종료
-- 브랜치 예시: `docs/prd-*`, `analysis/*`, `docs/*`, `feature/*`, `fix/*`
-- 커밋 메시지: Conventional Commits (`type(scope): subject`)
-  - 예: `docs(chapters): refine observation chapter`
-- 상세한 워크플로우: `CONTRIBUTING.md`, `.github/WORKFLOW.md`
+1) **빠른 복습**: 각 챕터의 한 문장 요약만 읽기  
+2) **심화 학습**: 관심 챕터 전체 요약 읽기  
+3) **실무 적용**: 체크리스트 섹션을 프로젝트에 적용
 
 ---
 
-## 저장소 관리 메모
+## 참고
 
-- `output/`는 gitignore 대상입니다. 로컬에서만 생성·활용하세요.
-- 챕터 파일(`output/chapters/*.md`)은 필요 시 재생성하거나 수동 정리해 사용합니다.
-- 로컬 참고용 문서가 있다면 gitignore 하에 두고, 공유가 필요할 때만 명시적으로 포함하세요.
-
----
-
-## 빠른 길잡이
-
-- 바로 읽기: `output/chapters/00-intro.md`, `output/chapters/01-observation.md`
-- 작업 시작: Issue 등록 → 브랜치 생성 → PR
-- 질문/아이디어: Issue에 남기면 빠르게 대응합니다.
+요약본의 구조, 학습 가이드, 통계는 `output/summaries/README.md`에 정리되어 있습니다.
